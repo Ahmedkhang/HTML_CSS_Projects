@@ -15,6 +15,8 @@
   .navbar {
     display: flex;
     position: sticky;
+    top:0;
+    z-index: 1000;;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
@@ -28,6 +30,7 @@
   .nav-links {
     list-style: none;
     display: flex;
+    text-decoration: none;
     gap: 30px;
   }
   
@@ -35,6 +38,7 @@
     color: white;
     font-size: 14px;
     cursor: default;
+    text-decoration: none;
   }
   
   /* Hero Section */
@@ -49,6 +53,41 @@
     justify-content: center;
     text-align: center;
     color: white;
+  }
+
+  .services-hero{
+      
+    height: 90vh;
+    background-image: url('https://duruthemes.com/demo/html/perukar/multipage-image/img/slider/4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #2B211F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  .pricing-hero{
+    height: 90vh;
+    background-image: url('https://duruthemes.com/demo/html/perukar/multipage-image/img/slider/18.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #2B211F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  } 
+  
+  .hero-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .hero-text h1 {
@@ -213,7 +252,9 @@
 
   .services-section {
     padding: 80px 10%;
-    background-color: #f8f8f8;
+    width:98vw;
+    /* height:50vh; */
+    background-color: #b91616;
     text-align: center;
   }
   
@@ -221,6 +262,7 @@
     font-size: 36px;
     margin-bottom: 50px;
     color: #111;
+        /* background-color: #140f0f; */
   }
   
   .services-grid {
@@ -235,6 +277,7 @@
     width: 100%;
     max-width: 320px;
     overflow: hidden;
+    font:bold;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
@@ -248,7 +291,7 @@
   .service-content {
     position: absolute;
     bottom: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(19, 18, 18, 0.7);
     color: #fff;
     padding: 20px;
     width: 100%;
@@ -269,7 +312,7 @@
     margin-top: 10px;
     font-weight: bold;
     font-size: 16px;
-    color: #fdd835;
+    color:#91765A;
   }
   .testimonial-section {
     background-image: url('https://duruthemes.com/demo/html/perukar/multipage-image/img/about2.jpg');
@@ -329,12 +372,16 @@
     
   .features-section {
     padding: 80px 10%;
+    text-align: center;
+    height:80vh;
     background-color: rgb(39, 35, 35);
     color: #ccc;
     text-align: center;
+    position: relative;
   }
   
   .features-header h2 {
+    /* position: absolute; */
     font-size: 36px;
     /* color: #111; */
     margin-bottom: 10px;
@@ -351,21 +398,34 @@
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 60px;
   }
   
   .feature-card {
     max-width: 300px;
+    position: relative;
   }
   
   .feature-card img {
     width: 100%;
+    /* position: relative; */
     border-radius: 10px;
     margin-bottom: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
   
   .feature-card h3 {
-    font-size: 18px;
+    width: 300px;
+    /* height:200h; */
+    /* text-align: cent; */
+    font-size: 24px;
+    position:absolute;
+    bottom: 30px;
+    left:1px;
+    font-weight: 900;
+    padding: 20px;
+    color:#fff
+    /* background-color: #fff; */
     /* color: #333; */
   }
 
@@ -389,9 +449,11 @@
   }
   
   .video-overlay h2 {
+    width: 600px;
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: bold;
+    color: #fff;
   }
   
   .play-button {
@@ -417,7 +479,7 @@
   
   .pricing-section {
     padding: 80px ;
-    background-color: #f9f9f9;
+    background-color:#F5EEE7;
     text-align: center;
   }
   
@@ -441,25 +503,34 @@
   }
   
   .price-card {
-    background: #fff;
-    border: 1px solid #ddd;
+    /* background: #fff; */
+    /* border: 1px solid #ddd; */
     padding: 20px;
-    max-width: 300px;
+    max-width: 800px;
+    gap: 20px;
+    /* display: inline; */
+    /* display: flex; */
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.05); */
     text-align: left;
   }
   
-  .price-card h3 {
+  .price-card .heading {
     font-size: 18px;
     margin-bottom: 10px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
-    font-weight: 600;
+    font-weight:900;
+    color: #111;
+  }
+  .card-container{
+    display: flex;
+    gap: 150px;
   }
   
   .price-card span {
+
     color: #c59d5f;
     font-weight: bold;
   }
@@ -473,7 +544,7 @@
 
   .team-section {
     padding: 50px ;
-    background-color: #f3efed;
+    background-color: #111;
     text-align: center;
   }
   
@@ -496,7 +567,7 @@
   }
   
   .team-member {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
     border-radius: 12px;
     max-width: 350px;
@@ -521,16 +592,6 @@
   }
   
   
-  footer {
-    background-color: #14100C;
-    color: white;
-    text-align: center;
-    padding: 80px 0;
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    gap:8%
-  }
 .right{
      width:350px;
      padding-top:20px;
@@ -739,3 +800,63 @@
   bottom:30px;
   background-color:#91765A ;
 } */
+
+.pricing-plan{
+  /* margin-top: 80px; */
+  background-color:#F5EEE7 ;
+}
+.pricing-grid {
+  /* padding: 80px; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* gap: 30px; */
+  justify-content: center;
+}
+.pricing-left-side {
+  width: 50%;
+  position:relative;
+  padding: 20px;
+  /* background-color: #f4f4f4; */
+  /* border-radius: 10px; */
+  text-align: center;
+}
+.pricing-left-side img {
+  width:80%;
+  /* position: relative; */
+}
+.pricing-left-side h1 {
+  position: absolute;
+  bottom: 45%;
+  font-size: 2rem;
+  left:40%;
+  color:#fff;
+  /* padding-bottom: 120px; */
+}
+.pricing-text-side{
+  margin-top: 60px;
+}
+.pricing-text-side-2 {
+  margin-top: 60px;
+  margin-left: 100px;
+  padding-left: 50px;
+  /* background-color: red; */
+}
+  footer {
+    background-color: #14100C;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap:8%
+  }
+
+  .pricing-grid2{
+
+    /* padding: 80px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
