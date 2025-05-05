@@ -38,6 +38,14 @@
     color: white;
     font-size: 14px;
     cursor: default;
+    cursor: pointer;
+
+  }
+  .nav-links li:hover {
+    color: #91765A;
+    transition: 0.4s;
+  }
+  .nav-links a{
     text-decoration: none;
   }
   
@@ -79,6 +87,30 @@
     justify-content: center;
     text-align: center;
     color: white;
+  }
+  .about-hero{
+    height: 90vh;
+    background-image: url('https://duruthemes.com/demo/html/perukar/multipage-image/img/slider/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #2B211F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  } 
+  .contact-hero{
+    height: 70vh;
+    background-image: url('https://duruthemes.com/demo/html/perukar/multipage-image/img/slider/11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #2B211F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
   } 
   
   .hero-overlay{
@@ -91,8 +123,8 @@
   }
   
   .hero-text h1 {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 55px;
+    font-weight: 900;
     letter-spacing: 2px;
   }
   
@@ -433,7 +465,9 @@
     background-image: url('https://duruthemes.com/demo/html/perukar/multipage-image/img/slider/5.jpg');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    background-color: #2B211F;
+    height: 80vh;
+    margin-top: 200px;
     position: relative;
     display: flex;
     align-items: center;
@@ -790,6 +824,8 @@
   border-radius: 4px;
   cursor: pointer;
   letter-spacing: 1px;
+
+  margin-top: 20px;;
 }
 
 .appointment-form button:hover {
@@ -860,3 +896,68 @@
     justify-content: center;
     gap: 30px;
   }
+/* contact us */
+.contact-info{
+  height: 100vh;
+  background-color: #F5EEE7;
+  padding: 80px;
+  display:flex;
+}
+.contact-left{
+  width:50%;
+  
+}
+.contact-left h5{
+  letter-spacing: 1px;;
+}
+.contact-left h1{
+  font-size: 40px;
+  margin-top: 10px;
+  color: #14100C;
+  font-weight: 900;
+}
+.contact-left p{
+  margin-top: 20px;
+  font-size: 16px;
+  width:50%;
+}
+.contact-right{
+  width: 40%;
+  height:80vh;
+  padding:40px;
+  background-color: #14100C;
+}
+.contact-left .heading{
+  font-family: 900;
+  color:#14100C ;
+  font-size: large;
+}
+.contact-left div{
+  margin-top: 20px;
+}
+.contact-left .info{
+  margin-top: 5px;
+}
+.contact-right h3{
+  text-align :center;
+  color:white;
+  font-size: 32px;
+}
+.contact-right .appointment-form{
+  margin-top: 20px;;
+}
+.contact-right .col{
+  display: flex;
+  width:30px;
+  /* space-between: 20px; */
+  /* margin-left: 10px; */
+  gap: 10px;
+  margin-top: 20px;
+  /* flex-wrap: wrap; */
+}
+.contact-right .textarea{
+  width:102%;
+  height:20vh;
+  margin-top: 20px;
+  padding: 10px;
+}
